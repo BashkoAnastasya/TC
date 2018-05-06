@@ -53,7 +53,7 @@ describe('Тестирование стараницы https://angular.io/', func
             expect(browser.getCurrentUrl()).toEqual('https://angular.io/events');
             browser.navigate().back();
         });
-        it('Нажимаем на 5-ый элемент "blog"', function() {
+        xit('Нажимаем на 5-ый элемент "blog"', function() {
             //  browser.ignoreSynchronization=false;
             mainPage.clickOnMenuItemByIndex2(4);
             browser.ignoreSynchronization=true;
@@ -89,7 +89,7 @@ describe('Тестирование стараницы https://angular.io/', func
         });
     });
     describe('Проверка скрытия меню при нажатии', function() {
-        it('Кликаем на кнопку меню и проверяем видимость меню', function() {
+        xit('Кликаем на кнопку меню и проверяем видимость меню', function() {
             mainPage.buttonMenuOpen.click();
             expect(mainPage.isDisplayedmenuLeftPanel()).toBe(false);
             mainPage.buttonMenuOpen.click();
@@ -112,7 +112,7 @@ describe('Тестирование стараницы https://angular.io/', func
             expect(mainPage.getAttributemenuButtonsLeftgetAtribute(2)).toEqual('true');
             mainPage.clickOnMenuItemButtonsLeftLevel1(2);
         });
-        it('Нажимаем на 4-ый элемент', function() {
+       xit('Нажимаем на 4-ый элемент', function() {
             mainPage.clickOnMenuItemButtonsLeftLevel1(3);
             expect(mainPage.getAttributemenuButtonsLeftgetAtribute(3)).toEqual('true');
             mainPage.clickOnMenuItemButtonsLeftLevel1(3);

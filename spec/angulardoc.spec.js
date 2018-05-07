@@ -48,7 +48,7 @@ describe('Тестирование стараницы https://angular.io/', func
             expect(browser.getCurrentUrl()).toEqual('https://angular.io/resources');
             browser.navigate().back();
         });
-        it('Нажимаем на 4-ый элемент "events"', function() {
+        xit('Нажимаем на 4-ый элемент "events"', function() {
             mainPage.clickOnMenuItemByIndex2(3);
             expect(browser.getCurrentUrl()).toEqual('https://angular.io/events');
             browser.navigate().back();
